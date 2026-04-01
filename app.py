@@ -135,7 +135,7 @@ mode = st.selectbox(
 )
 
 # === РАСЧЁТ ===
-if st.button("Рассчитать"):
+if st.button("Calculate"):
 
     results = compute(freq, alt, sfs, bws, cr, pl_min, pl_max, dt=0.1, mode=mode)
 
