@@ -130,8 +130,8 @@ pl_min, pl_max = st.slider("Payload", 1, 512, (1, 512))
 cr = st.selectbox("CR", [1,2,3,4], index=0)
 
 mode = st.selectbox(
-    "Model mode",
-    ["Packet (SX12xx, SX1301 and older)", "Symbol (LR11xx, SX1302 and newer)", "Compare"]
+    "Model mode (Packet for SX12xx, SX1301 and older; Symbol for LR11xx, SX1302 and newer)",
+    ["Packet", "Symbol", "Compare"]
 )
 
 # === РАСЧЁТ ===
