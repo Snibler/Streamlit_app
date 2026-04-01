@@ -105,8 +105,8 @@ def compute(freq, alt, sfs, bws, cr, pl_min, pl_max, dt):
 # === UI ===
 st.title("LoRa Doppler Critical Elevation Calculator")
 
-freq = st.number_input("Частота (Гц)", value=868e6)
-alt = st.number_input("Высота орбиты (м)", value=500e3)
+freq = st.number_input("Frequency (Hz)", value=868*10e6)
+alt = st.number_input("Orbit height (m)", value=500*10e3)
 
 sfs = st.multiselect("Spreading Factor", [7,8,9,10,11,12], default=[12])
 bws = st.multiselect("Bandwidth (Hz)", [41700, 62500, 125000, 250000, 500000], default=[125000])
