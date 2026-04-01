@@ -126,7 +126,7 @@ alt = st.number_input("Orbit height (m)", value=500e3)
 sfs = st.multiselect("SF", [7,8,9,10,11,12], default=[12])
 bws = st.multiselect("BW (Hz)", [41700, 62500, 125000, 250000, 500000], default=[125000])
 
-pl_min, pl_max = st.slider("Payload", 1, 512, (1, 120))
+pl_min, pl_max = st.slider("Payload", 1, 512, (1, 512))
 cr = st.selectbox("CR", [1,2,3,4], index=0)
 
 mode = st.selectbox(
