@@ -131,7 +131,7 @@ cr = st.selectbox("CR", [1,2,3,4], index=0)
 
 mode = st.selectbox(
     "Model mode",
-    ["Packet", "Symbol", "Compare"]
+    ["Packet (SX12xx, SX1301 and older)", "Symbol (LR11xx, SX1302 and newer)", "Compare"]
 )
 
 # === РАСЧЁТ ===
@@ -177,7 +177,7 @@ if st.button("Рассчитать"):
             df[f"BW{BW}_symbol"] = data["symbol"]
 
         st.download_button(
-            f"Скачать CSV (SF{SF})",
+            f"Download CSV (SF{SF})",
             df.to_csv(index=False).encode(),
             file_name=f"SF{SF}.csv"
         )
